@@ -43,7 +43,7 @@
 
 3. Ejecutamos el programa con el siguiente comando:
 
-       java -cp target/classes;target/dependency/* edu.eci.arep.controller.CalculatorController
+       mvn exec:java -D "exec.mainClass"="edu.escuelaing.demo.NanoSparkWebDemo"
        
 
 4. Gereramos la documentación con el siguiente comando ejecutandolo desde consola:
