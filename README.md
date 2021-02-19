@@ -1,17 +1,26 @@
-# ***AREP 1 Tercio Calculadora Trig***
+# ***AREP: 1 Tercio Calculadora Trig***
 
-## Introducción Del Proyecto
+## Taller de verificación de conocimientos tecnicos GRUPO2
+
+### Introducción al Taller
+
+1. Construir un servicio WEB (puede usar Spark o Sockets) que reciba un número y una cadena de tres caracteres. La cadena puede ser una de tres opciones: "cos", "sin", "tan". El     servicio asume que el número que recibe está en radianes y retorna una estructura JSON con el valor de la función trigonométrica correspondiente. 
+2. Construya otro servicio Web (puede usar Spark o Sockets) que sea una fachada del servicios construido en el primer punto. Es decir, este servicio recibe los mismos parámetros      y regresa el mismo resultado, pero para hacer el cálculo debe invocar via http al servicio web que se constuyó en el primer punto.
+3. Su diseño debe soportar la composición de nuevas operaciones para modificar servicios existentes o componer nuevos servicios. Por ejemplo, piense que en el futuro podemos          solicitar que se creen nuevos servicios sobre  el API web, es decir,  debe ser fácilmente extensible.
+4. El diseño de los servicios WEB debe tener en cuenta buenas prácticas de diseño OO.
+5. Despliegue los servicios en Heroku en dynos separados.
+6. Construya un cliente JAVA para probar los dos servicios.
+7. El cliente y los servicios debe entregarlos en dos proyectos estructurado con Maven. El primero con el servicio fachada y el cliente. Y el segundo con el servicio web             concreto.
+
 
 
 
 ### Pre-Requisitos
 
 
-    * [Java 8.0](https://www.java.com/es/) - Codificación
-    * [Maven](https://maven.apache.org/) - Manejo de Dependencias
-    * [JUnit](https://junit.org/junit5/) - Pruebas de Unidad
-    * [Git](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git) - Control de Sistemas de veriones.
-    * [Heroku](https://devcenter.heroku.com/articles/heroku-cli#download-and-install) - Despligue de Ambiente Web
+- [Java 8.0](https://www.java.com/es/) - Codificación
+- [Maven](https://maven.apache.org/) - Manejo de Dependencias
+- [Git](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git) - Control de Sistemas de veriones.
 
 
 ### Despliegue con Heroku App
@@ -24,7 +33,7 @@
 
 1. Primero se debe clonar el repositorio, con el siguiente comando descrito:
 
-       git clone https://github.com/Fabimauri47/-AREP-Lab3-CLIENTES-Y-SERVICIOS
+       git clone https://github.com/Fabimauri47/-AREPT1CalculadoraTrig
     
 
 2. Luego proceda abrir el cmd (Ventana de comandos) en donde tiene el repositorio alojado y ejecute el siguiente comando:
@@ -34,8 +43,8 @@
 
 3. Ejecutamos el programa con el siguiente comando:
 
-       mvn exec:java -D "exec.mainClass"="edu.escuelaing.demo.NanoSparkWebDemo"
-   
+       java -cp target/classes;target/dependency/* edu.eci.arep.controller.CalculatorController
+       
 
 4. Gereramos la documentación con el siguiente comando ejecutandolo desde consola:
 
@@ -56,7 +65,7 @@ Para correr las pruebas, usamos el siguiente comando en una terminal CMD o en un
 * [Java 8.0](https://www.java.com/es/) - Codificación y Lenguaje de Programacíon.
 * [JUnit5](https://junit.org/junit5/) - Programa para ejecutar pruebas de unidad.
 * [Maven](https://maven.apache.org/) - Manejo de Dependencias.
-* [IntelliJ IDEA](https://www.jetbrains.com/es-es/idea/) - Programa usado para la Codificacíon.
+* [Heroku](https://devcenter.heroku.com/articles/heroku-cli#download-and-install) - Despligue de Ambiente Web
 
 
 ## Autor
