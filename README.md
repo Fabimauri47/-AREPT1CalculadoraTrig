@@ -25,7 +25,7 @@
 
 ### Despliegue con Heroku App
 
->[![Deployed to Heroku](https://www.herokucdn.com/deploy/button.png)](https://sheltered-woodland-90071.herokuapp.com/)
+>[![Deployed to Heroku](https://www.herokucdn.com/deploy/button.png)](https://arepcalculadoratrig.herokuapp.com/)
 
 
 
